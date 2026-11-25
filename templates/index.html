@@ -9,9 +9,12 @@
 <body>
     <header class="app-header">
         <div class="container header-content">
-            <h1>Gestor de Tareas</h1>
-            <div id="header-actions"></div>
-        </div>
+                    <h1>Gestor de Tareas</h1>
+                    <div id="header-actions" class="header-actions">
+                        <span class="user-badge">{{ username }}</span>
+                        <a href="{{ url_for('auth.logout') }}" class="btn btn-outline">Cerrar sesión</a>
+                    </div>
+                </div>
     </header>
 
     <main class="container" id="app-main">
