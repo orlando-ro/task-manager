@@ -53,7 +53,8 @@ export async function loadTasks({ status = "", priority = "" } = {}) {
             return;
         }
 
-        container.innerHTML = tasks.map(renderTaskCard).join("");
+      container.innerHTML = tasks.map(renderTaskCard).join("");
+      document.dispatchEvent(new CustomEvent("tasksRendered", { detail: tasks }));
     } catch {
         container.innerHTML = `<p class="empty-state">Error de conexión al cargar las tareas.</p>`;
     }
