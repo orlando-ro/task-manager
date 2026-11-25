@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="app-header">
+        <div class="container header-content">
+            <h1>Gestor de Tareas</h1>
+            <div id="header-actions"></div>
+        </div>
+    </header>
+
+    <main class="container" id="app-main">
+        <!-- Las secciones del CRUD se agregarán de forma incremental en cada rama -->
+    </main>
+
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
