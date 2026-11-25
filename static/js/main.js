@@ -1,3 +1,5 @@
+import { initCreateTask } from "./create.js";
+
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Gestor de Tareas inicializado.");
+    initCreateTask();
 });
