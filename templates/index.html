@@ -52,6 +52,30 @@
                     <button type="submit" class="btn btn-primary">Agregar tarea</button>
                 </form>
             </section>
+            <section class="card" id="task-list-section">
+                        <div class="list-header">
+                            <h2>Mis Tareas <span id="task-count" class="task-count">(0)</span></h2>
+                            <div class="list-controls">
+                                <label for="filter-status" class="sr-only">Filtrar por estado</label>
+                                <select id="filter-status">
+                                    <option value="">Todos los estados</option>
+                                    <option value="Pendiente">Pendientes</option>
+                                    <option value="Completada">Completadas</option>
+                                </select>
+                                <label for="filter-priority" class="sr-only">Filtrar por prioridad</label>
+                                <select id="filter-priority">
+                                    <option value="">Todas las prioridades</option>
+                                    <option value="Alta">Alta</option>
+                                    <option value="Media">Media</option>
+                                    <option value="Baja">Baja</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="task-list" class="task-list">
+                            <p class="empty-state">Cargando tareas...</p>
+                        </div>
+                    </section>
         </main>
 
     <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
