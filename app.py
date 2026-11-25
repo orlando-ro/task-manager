@@ -5,6 +5,7 @@ from flask import Flask, redirect, render_template, session, url_for
 from database import init_db
 from routes.auth import auth_bp
 from routes.create_task import create_task_bp
+from routes.delete_task import delete_task_bp
 from routes.list_tasks import list_tasks_bp
 from routes.update_task import update_task_bp
 
@@ -16,6 +17,7 @@ app.register_blueprint(auth_bp)
 app.register_blueprint(create_task_bp)
 app.register_blueprint(list_tasks_bp)
 app.register_blueprint(update_task_bp)
+app.register_blueprint(delete_task_bp)
 
 
 @app.route("/")

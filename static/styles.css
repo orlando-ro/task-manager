@@ -405,3 +405,14 @@ body {
     gap: 0.5rem;
     margin-top: 1rem;
 }
+
+/* --- Feature: Delete Task --- */
+.btn-danger-outline {
+    background-color: transparent;
+    color: var(--danger);
+    border: 1px solid #fecaca;
+}
+
+.btn-danger-outline:hover {
+    background-color: #fee2e2;
+}
